@@ -1,0 +1,199 @@
+@charset "utf-8";
+body, h1, h2, h3, h4, p, image, figure, p, a, table, ul, li, dl, dd, dt {
+    padding: 0px;
+    margin: 0px;
+}
+img {
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+}
+body {
+    display: block;
+    font-family: YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, sans-serif;
+    font-size: 1em;
+}
+ul {
+    list-style-type: none;
+}
+.subpage .mainimage_company {
+    background-repeat: no-repeat;
+    background-color: #a6de78;
+    width: auto;
+    text-align: center;
+    margin-bottom: 100px;
+    height: 500px;
+}
+.inner {
+    margin: 0px 100px;
+}
+
+.subpage .topic  {
+    margin: 20px 30px;
+}
+.subpage .inner ol{
+    text-align: start;
+}
+.subpage .inner .topic li {
+    display: inline;
+    text-align: start;
+}
+.subpage .topic li+li:before {
+    content: ">";
+}
+.sec1-3 table  , .sec1-3 p{
+    margin: 0 auto;
+    width: 800px;
+}
+.sec1-3 table {
+    margin-bottom: 30px;
+    border-collapse: collapse;
+    border: 5px solid #F6F281;
+    font-size: 20px
+}
+.sec1-3 th, .sec1-3 td {
+    vertical-align: top;
+}
+.sec1-3 th {
+    /*border-right: 1px solid ##009ee7;*/
+    text-align: center;
+    white-space: nowrap;
+    padding: 20px;
+}
+.sec1-3 td{
+    text-align: center;
+    white-space: nowrap;
+    padding-right: 100px;
+    padding: 20px;
+}
+/*.sec1-3 td ul{
+  text-align: left;
+  padding-left: 100px
+}*/
+.sec1-3 dl{
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px
+}
+.sec1-3 dl dt {
+  width: 40%;
+  text-align: left;
+}
+.sec1-3 dl dd {
+  width: 60%;
+  text-align: left
+}
+
+.map {
+    text-align: center;
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 600/450;
+}
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+.map figure{
+    margin-top: 20px;
+    max-width: 100%;
+}
+.sec1-3 tr:nth-child(odd) {
+    background-color: #F6F281;
+}
+.sec1-3 tr:nth-child(even) {
+    background-color: #fff;
+}
+
+
+.sec1-3 .ninka{
+  display: block;
+  text-align: center;
+}
+
+.sec1-3 td .ninka p{
+  padding: 20px ;
+}
+
+.sec1-3 td .ninkamark img{
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width:1040px){
+.inner   {
+    width: calc(100% - 40px);
+}
+body .subpage .inner   {
+    width: calc(100% - 40px);
+}
+body {
+
+}
+.subpage .mainimage_company {
+    background-repeat: no-repeat;
+    background-color: #a6de78;
+    height: auto;
+    padding: 0 20px;
+    text-align: center;
+    max-width: 100%;
+}
+.sec1-3 table , .sec1-3 p{
+    width: 100%;
+}
+.sec1-3 td {
+    white-space: normal;
+}
+  
+.sec1-3 ul{
+    margin: 0;
+  }
+  .sec1-3 dl{
+    width: calc(100% - 40px);
+  }
+
+}
+
+@media screen and (max-width:600px){
+.sec1-3 th {
+    border-style: none;
+}
+.subpage .mainimage_company {
+    background-color: #a6de78;
+}
+.sec1-3 table       {
+    width: 100%;
+}
+.sec1-3 th, .sec1-3 td {
+    display: block;
+}
+/*.sec1-3 td ul {
+  padding-left: 0;
+}*/
+  .sec1-3 dl{
+    display: inline-block;
+}
+.sec1-3 dl dt {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 5px
+}
+.sec1-3 dl dd {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 15px
+  
+}
+
+
+.sec1-3 td .ninkamark img{
+    margin-bottom: 30px;
+}
+}
+
+@media screen and (min-width:601px){
+
+
+
+}

@@ -1,0 +1,408 @@
+@charset "utf-8";
+/**ここから下リセットCSS**/
+body,h1,h2,h3,h4,p,image,figure,p,a,table,ul,li,dl,dd,dt,ol{
+  margin: 0px;
+  padding: 0px;
+  border:0;
+}
+img{
+  vertical-align: top;
+}
+body{
+	display: block;
+	font-size: 20px;
+	font-family: YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, sans-serif;
+}
+li{
+  list-style:none;
+}
+a{
+  text-decoration:none;
+}
+table {
+border-collapse:collapse;
+border-spacing:0;
+}
+/**ここまでリセットCSS**/
+
+/**ここから変えた全体設定**/
+body{
+  min-height: 100vh;
+  position: relative;
+}
+body main .inner{
+  margin: 0 auto;
+  padding: 0px 20px;
+  width: 1000px;
+}
+/**ここまで**/
+
+/**ここからheader**/
+header{
+  height: 100px;
+  width: auto;
+  background-color: #facc29;
+  /**position: relative;**/
+}
+header .inner{
+  height: auto;
+  width: 960px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+header h1{
+width: 220px;
+height: 41px;
+}
+nav ul{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+nav li{
+  margin: 0 5px;
+}
+nav img{
+  width: 110px;
+  max-width: 100%;
+  height: auto;
+}
+.top_bg {
+	background-image: url(../img/index_bg01.png);
+}
+.go_top_btn{
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+}
+
+/**ここからfooter**/
+footer {
+	padding: 40px 0;
+	text-align: center;
+	background-color: #73cfff;
+}
+.footer_link {
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+.footer_navi {
+	margin-bottom: 30px;
+}
+.footer_mail li{
+  padding: 0px 10px;
+}
+
+footer .footer_link a, footer .footer_navi a {
+	font-weight: lighter;
+	color: #000;
+}
+.footer_navi a {
+	padding-left: 30px;
+}
+.footer_link a {
+	padding-left: 10px;
+}
+.footer_tel ul li, .footer_mai ul li {
+	padding-left: 30px;
+}
+.footer_tel ul, .footer_mail ul  {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	font-size: 23px;
+}
+.footer_link ul  {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	font-size: 16px;
+}
+.footer_navi  ul{
+	justify-content: center;
+  }
+.footer_link a:hover, .footer_navi a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.footer_link li::before , .footer_link li:last-child::after{
+	content: "　|";
+}
+.footer_navi ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	font-size: 16px;
+}
+.footer_link ul, .footer_nav ul {
+	flex-wrap: wrap;
+	white-space: nowrap;
+}
+/**ここからhomeinner**/
+.topmainimage {
+  background-repeat: no-repeat;
+  background-color: #73cfff;
+  height: 750px;
+  width: auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+main .home{
+	display: block;
+  margin: 0 20px;
+  padding-bottom: 5em;
+}
+.inner .top_bg{
+  text-align: center;
+}
+.home .sec1, .home .sec2{
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+.home .sec1 h2{
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.home .sec1{
+  background-color:rgba(115,207,255,0.5);
+  border-radius: 35px;
+}
+.home .sec1 .text{
+  text-align: center;
+  background-color: #fff;
+  width: 800px;
+  margin: 0 auto;
+  padding: 45px 0;
+  border-radius: 35px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .sec2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.home figure{
+  padding: 0 10px;
+}
+.home .secinner{
+  display: flex;
+}
+.home .sec2 .position_illust{
+  position: absolute;
+  left:0px;
+  top:80px;
+}
+.home .sec2 .position_illust img{
+  height: 200px;
+  width: auto;
+}
+.home figure .ceo_photo{
+    width: 160px;
+    height: auto;
+}
+
+@media screen and (max-width:1040px){
+/**ここから全体設定**/
+  img {
+    height: auto;
+  }
+
+  body{
+    width: 100%;
+  }
+  body main{
+    width: 100%;
+    max-width: 1000px;
+  }
+
+/**全体設定**/
+	/**↓他のページに影響**/
+/*  main figure{
+	/* [disabled]width: 40%; 
+  }*/
+  header{
+    width: 100%;
+  }
+
+  header .inner{
+    height: auto;
+    width: auto;
+}
+  header h1{
+    width : auto ;
+    height: auto;
+}
+  nav img{
+    width: 110px;
+  }
+  nav ul{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    margin-top: 0px;
+	}
+  nav li{
+    width: auto;
+    padding: 2px;
+  }
+  .go_top_btn{
+    width: 14vw;
+  }
+
+/**ここまで**/
+
+/**ここからindexの設定**/
+  .home .inner{
+    width: calc(100% - 40px);
+  }
+  .home .illust{
+    display: none;
+  }
+  .home .position_illust{
+    display: none;
+  }
+  .home .sec1 .text{
+    width: calc(100% - 90px);
+    padding: 0 20px;
+  }
+  .topmainimage{
+    background-repeat: no-repeat;
+    background-color: #73cfff;
+    height: auto;
+    padding: 0 20px;
+    text-align: center;
+    width: auto;
+}
+
+  .home .inner figure{
+    width: 30%;
+    margin: 0 auto;
+}
+  .home .sec1 h2{
+    width: auto;
+}
+  .home .sec1 .text{
+    flex-wrap: wrap;
+}
+  .home .sec2{
+    display: block;
+}
+  .home .sec2 figure{
+    padding-bottom: 20px
+  }
+  .home .inner .text{
+    height: auto;
+  }
+/*ここからfooter*/	
+footer .footer_inner {
+    width: calc(100% - 40px);
+  }
+.footer_nav a, .footer_link a {
+    white-space: nowrap;
+}
+.footer_navi ul {
+white-space: nowrap;
+flex-wrap: wrap;
+}	
+.footer_tel ul, .footer_mail ul {
+	display: block;
+}
+.footer_navi a {
+	padding-left: 10px;
+}
+/**footerここまで**/
+
+
+
+}
+
+
+@media screen and (max-width:600px){
+.top_bg {
+	background-image: none;
+}
+	
+  nav img{
+    width: 100%;
+  }
+	
+  /**ここからハンバーガーメニュ**/ 
+header{
+    height: auto;
+}
+header .inner{
+    display: block;
+}
+header h1{
+    position: absolute;
+}
+nav ul{
+    display: block;
+    text-align: center;
+    background-color: #facc29;
+    padding-bottom: 5px;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+nav li{
+    margin-bottom: 5px;
+}
+#nav-toggle{
+    width: 70px;
+    height: 50px;
+    margin-left: auto;
+    position: relative;
+    right: -20px;
+}
+#nav-toggle span{
+		display: block;
+		width: 30px;
+		height: 4px;
+		position: absolute;
+		left: 20px;
+		background: #333;
+		transition: 0.5s;
+}
+#nav-toggle span:nth-child(1){
+		top: 12px;
+}
+#nav-toggle span:nth-child(2){
+		top: 23px;
+}
+#nav-toggle span:nth-child(3){
+		top: 34px;
+	}
+nav ul{
+		display: none;
+	}
+#nav-toggle.open span:nth-child(1){
+		top: 23px;
+		transform: rotate(315deg)
+	}
+#nav-toggle.open span:nth-child(2){
+		width: 0px;
+		left: 50%;
+	}
+#nav-toggle.open span:nth-child(3){
+		top: 23px;
+		transform: rotate(-315deg)
+	} 
+}
+
+
+@media screen and (min-width:601px){
+nav ul{
+		display: flex !important;
+}
+
+}

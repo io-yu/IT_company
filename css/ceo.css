@@ -1,0 +1,65 @@
+@charset "utf-8";
+body, h1, h2, h3, h4, p, image, figure, p, a, table, ul, li, dl, dd, dt {
+    padding: 0px;
+    margin: 0px;
+}
+img {
+    vertical-align: top;
+}
+body {
+    display: block;
+    font-style: 1em;
+    font-family: YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+.subpage .topic  {
+    margin: 20px 30px;
+}
+.subpage .topic li {
+    display: inline;
+}
+.subpage .topic li+li:before {
+    content: " > ";
+}
+
+
+
+.sec1 h2 {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.sec1 h3 {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.sec1 .text {
+    margin-left: 30px;
+}
+
+
+
+
+@media screen and (max-width:1040px){
+img {
+    height: auto;
+    max-width: 100%;
+}
+.inner {
+    width: calc(100% - 40px);
+}
+
+
+
+}
+
+@media screen and (max-width:600px){
+}
+
+@media screen and (min-width:601px){
+}
